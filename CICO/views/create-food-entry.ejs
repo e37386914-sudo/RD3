@@ -1,0 +1,33 @@
+<!-- <h1 class="mb-4">Add Food Entry</h1>
+<form method="POST" class="card card-body">
+  <div class="mb-3">
+    <label class="form-label" for="dateTime">Date and Time</label>
+    <input class="form-control" type="datetime-local" id="dateTime" name="dateTime">
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="foodName">Food Name</label>
+    <input class="form-control" type="text" id="foodName" name="foodName">
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="calories">Calories</label>
+    <input class="form-control" type="number" id="calories" name="calories">
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="servingSize">Serving Size</label>
+    <input class="form-control" type="number" id="servingSize" name="servingSize">
+    <label class="form-label" for="unit">Unit</label>
+    <select class="form-select" id="unit" name="unit">
+      <option value="serving">Serving</option>
+      <option value="gram">Gram</option>
+      <option value="ounce">Ounce</option>
+      <option value="pound">Pound</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary mt-3">Add Food Entry</button>
+</form> -->
+
+<h1 class="mb-4">Add Food Entry</h1>
+<form method="POST" class="card card-body">
+  <%- include("food-entry-form", { foodEntry: undefined }) %>
+    <button type="submit" class="btn btn-primary mt-3">Add Food Entry</button>
+  </form>
